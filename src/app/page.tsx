@@ -61,7 +61,7 @@ export default function Home() {
               </div>
             </div>
             <pre
-              className="mt-4 overflow-x-auto rounded-lg p-3 text-xs leading-relaxed"
+              className="mt-4 whitespace-pre-wrap break-all rounded-lg p-3 text-xs leading-relaxed"
               style={{ background: "var(--bg)" }}
             >
               {JSON.stringify(record, null, 2)}
