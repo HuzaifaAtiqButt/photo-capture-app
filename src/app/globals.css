@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --ink: #0f172a;
+  --muted: #5b6573;
+  --line: #dde3ea;
+  --brand: #2563eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --ink: #e6edf3;
+    --muted: #8b96a5;
+    --line: #2a313c;
+    --brand: #60a5fa;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.btn,
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.9rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  min-height: 2.5rem;
+}
+
+.btn:hover {
+  border-color: var(--brand);
+}
+
+.btn:disabled,
+.btn-primary:disabled {
+  opacity: 0.6;
+}
+
+.btn-primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn:focus-visible,
+.btn-primary:focus-visible,
+label.btn:focus-within {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
